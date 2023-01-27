@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/hola")
     public String holaMundo(){
-        return "Hola Mundo que tal vamos!! Hasta luego ";
+        return "Hola Mundo que tal vamos!! Hasta luego";
     }
     @GetMapping("/bootstrap")
     public String bootstrap(){

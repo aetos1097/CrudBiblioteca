@@ -15,7 +15,7 @@ import java.util.Optional;
 public class BookController {
     // Atributos
     private final BookRepository bookRepository;
-    private final Logger log = LoggerFactory.getLogger(BookController.class); // muestra los mensajes cn colores hora, etc
+    private final Logger log = LoggerFactory.getLogger(BookController.class); // muestra los mensajes con colores hora, etc
 
     //constructores
     public BookController(BookRepository bookRepository) {
@@ -85,7 +85,7 @@ public class BookController {
 
     /**
      * Actualizar un libro exisitente por base de datos
-     * @return
+     * @return = badRequest or 200
      */
     @PutMapping("/api/books")
     public ResponseEntity<Book> update(@RequestBody Book book){
